@@ -16,7 +16,7 @@ TutorController.getAvailableTutors = async (req, res) => {
     }
 
     // Filter tutors based on current time, available status, class grade, and subject 
-    console.log(await Tutor.find()) 
+    //console.log(await Tutor.find()) 
     const availableTutors = await Tutor.findAll({
       availability: true,
       classGrade: classGrade,

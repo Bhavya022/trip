@@ -18,7 +18,7 @@ DoubtController.createDoubtRequest = async (req, res) => {
     } 
     const l=student.language; 
     console.log(student.classGrade)
-   console.log(await Tutor.find({language:l,classGrade:student.classGrade})) 
+   //console.log(await Tutor.find({language:l,classGrade:student.classGrade})) 
     // Find online tutors matching the subject, language, and classGrade
     const onlineTutors = await Tutor.find({
       $and: [
